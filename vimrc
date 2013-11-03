@@ -5,7 +5,6 @@ autocmd!
 
 call pathogen#infect()
 
-
 set nocompatible
 set hidden
 set history=10000
@@ -168,9 +167,8 @@ nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
 set background=dark
 
-let g:Powerline_symbols = 'fancy'
-
 let g:syntastic_python_checker_args='--max-line-length=100'
 
 let g:SuperTabDefaultCompletionType = "context"
 let g:jedi#popup_on_dot = 0
+let g:airline_powerline_fonts = 1
