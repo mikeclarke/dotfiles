@@ -56,3 +56,7 @@ export PATH=$GOPATH/bin:$PATH
 
 # Python
 export PYTHONDONTWRITEBYTECODE=1
+
+if [ -f ~/.aws/creds.sh ]; then
+    source ~/.aws/creds.sh
+fi
