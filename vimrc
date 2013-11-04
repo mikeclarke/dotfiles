@@ -169,3 +169,4 @@ let g:syntastic_python_checker_args='--max-line-length=100'
 let g:SuperTabDefaultCompletionType = "context"
 let g:jedi#popup_on_dot = 0
 let g:airline_powerline_fonts = 1
+let g:airline_theme = "powerlineish"
