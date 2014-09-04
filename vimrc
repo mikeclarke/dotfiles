@@ -39,7 +39,7 @@ syntax on
 filetype plugin indent on
 
 set wildmode=longest,list
-set wildignore=log/**,node_modules/**,target/**,tmp/**,venv/**,*.rbc
+set wildignore=log/**,node_modules/**,target/**,tmp/**,venv/**,*.rbc,build/**,dist/**
 set wildmenu
 
 let mapleader = ','
