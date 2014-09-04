@@ -21,8 +21,6 @@ Bundle 'tpope/vim-dispatch'
 Bundle 'tpope/vim-eunuch'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'tpope/vim-fugitive'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'slim-template/vim-slim'
 
 set hidden
 set history=10000
