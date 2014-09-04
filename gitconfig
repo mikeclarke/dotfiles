@@ -6,7 +6,7 @@
 [github]
     user = mikeclarke
 [core]
-    excludesfile = /Users/mclarke/.gitignore_global
+    excludesfile = ~/.gitignore_global
 [alias]
     st = status
     ci = commit
