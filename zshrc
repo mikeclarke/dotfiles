@@ -43,8 +43,7 @@ unsetopt correct_all
 alias rake='noglob rake'
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+eval "$(rbenv init -)"
 
 if [ -d /usr/local/go ]; then
     export PATH=/usr/local/go/bin:$PATH
