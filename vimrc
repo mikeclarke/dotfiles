@@ -1,16 +1,16 @@
 " Mike Clarke's .vimrc
 " vim:set ts=2 sts=2 sw=2 expandtab:
 
+" Required for various plugins
 set nocompatible
 
-" " Required Vundle setup
+" Required Vundle setup
 filetype off
 set runtimepath+=~/.vim/bundle/vundle
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'wincent/Command-T'
-Bundle 'vim-scripts/L9'
 Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
 Bundle 'scrooloose/syntastic'
@@ -21,7 +21,6 @@ Bundle 'tpope/vim-dispatch'
 Bundle 'tpope/vim-eunuch'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'tpope/vim-fugitive'
-Bundle 'clones/vim-fuzzyfinder'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'slim-template/vim-slim'
 
