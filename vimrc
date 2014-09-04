@@ -17,8 +17,6 @@ Bundle 'scrooloose/syntastic'
 Bundle 'bling/vim-airline'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-dispatch'
-Bundle 'tpope/vim-eunuch'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'tpope/vim-fugitive'
 
