@@ -59,3 +59,6 @@ export PYTHONDONTWRITEBYTECODE=1
 if [ -f ~/.aws/creds.sh ]; then
     source ~/.aws/creds.sh
 fi
+
+# Java
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home"
