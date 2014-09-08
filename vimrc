@@ -11,7 +11,6 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'wincent/Command-T'
-Bundle 'kien/ctrlp.vim'
 Bundle 'ervandew/supertab'
 Bundle 'scrooloose/syntastic'
 Bundle 'bling/vim-airline'
@@ -151,13 +150,6 @@ nmap <silent> <leader>sv :vsplit<CR>
 nmap <silent> <leader>hs :split<CR>
 nmap <silent> <leader>vs :vsplit<CR>
 nmap <silent> <leader>sc :close<CR>
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" CtrlP Configuration
-" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn|venv)$'
-let g:ctrlp_user_command = 'find %s -type f'
-let g:ctrlp_use_caching = 0
 
 " plugin settings
 let g:CommandTMaxHeight=20
