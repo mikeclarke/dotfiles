@@ -63,4 +63,9 @@ if [ -f ~/.aws/creds.sh ]; then
 fi
 
 # Java
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home"
+export PATH=$HOME/.jenv/bin:$PATH
+eval "$(jenv init -)"
+
+# Clojure
+export LEIN_USERNAME=$AWS_ACCESS_KEY_ID
+export LEIN_PASSPHRASE=$AWS_SECRET_KEY
