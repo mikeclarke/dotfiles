@@ -25,6 +25,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 Bundle 'guns/vim-sexp'
 Bundle 'tpope/vim-sexp-mappings-for-regular-people'
+Bundle 'flazz/vim-colorschemes'
 
 set hidden
 set history=10000
@@ -114,7 +115,7 @@ augroup END
 " gui settings
 if (&t_Co == 256 || has('gui_running'))
   if ($TERM_PROGRAM == 'iTerm.app')
-    colorscheme solarized
+    colorscheme distinguished
   else
     colorscheme desert
   endif
