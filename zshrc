@@ -34,7 +34,7 @@ bindkey '^N' history-search-forward
 # `cd` by just typing dir name
 setopt AUTO_CD
 
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH
 
 source $ZSH/oh-my-zsh.sh
 
@@ -43,8 +43,10 @@ unsetopt correct_all
 alias rake='noglob rake'
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
+# Ruby
 eval "$(rbenv init -)"
 
+# Go
 if [ -d /usr/local/go ]; then
     export PATH=/usr/local/go/bin:$PATH
     source /usr/local/go/misc/zsh/go
