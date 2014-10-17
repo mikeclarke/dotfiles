@@ -88,7 +88,7 @@ augroup vimrcEx
     \ endif
 
   "for ruby, autoindent with two spaces, always expand tabs
-  autocmd FileType ruby,eruby,yaml,html,javascript set ai sw=2 sts=2 et
+  autocmd FileType ruby,eruby,yaml,html,javascript,json set ai sw=2 sts=2 et
   autocmd FileType python set sw=4 sts=4 et
 
   autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:&gt;
