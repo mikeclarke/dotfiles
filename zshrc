@@ -62,10 +62,6 @@ if [ -f ~/.aws/creds.sh ]; then
     source ~/.aws/creds.sh
 fi
 
-# Java
-export PATH=$HOME/.jenv/bin:$PATH
-eval "$(jenv init -)"
-
 # Clojure
 export LEIN_USERNAME=$AWS_ACCESS_KEY_ID
 export LEIN_PASSPHRASE=$AWS_SECRET_KEY
