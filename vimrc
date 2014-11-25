@@ -26,6 +26,7 @@ Bundle 'tpope/vim-repeat'
 Bundle 'guns/vim-sexp'
 Bundle 'tpope/vim-sexp-mappings-for-regular-people'
 Bundle 'flazz/vim-colorschemes'
+Bundle 'kien/rainbow_parentheses.vim'
 
 set hidden
 set history=10000
@@ -181,3 +182,9 @@ let g:syntastic_python_checker_args='--max-line-length=100'
 let g:SuperTabDefaultCompletionType = "context"
 let g:airline_powerline_fonts = 1
 let g:airline_theme = "powerlineish"
+
+" Rainbow Parentheses
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
