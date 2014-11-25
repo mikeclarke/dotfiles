@@ -27,6 +27,7 @@ Bundle 'guns/vim-sexp'
 Bundle 'tpope/vim-sexp-mappings-for-regular-people'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'christoomey/vim-tmux-navigator'
 
 set hidden
 set history=10000
@@ -140,14 +141,6 @@ nmap <leader><space> :call whitespace#strip_trailing()<CR>
 nmap <leader>g :ToggleGitGutter<CR>
 nmap <leader>c <Plug>Kwbd
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
-
-" Window Movement
-nmap <silent> <C-h> :wincmd h<CR>
-nmap <silent> <C-j> :wincmd j<CR>
-nmap <silent> <C-k> :wincmd k<CR>
-nmap <silent> <C-l> :wincmd l<CR>
-" Previous Window
-nmap <silent> <C-p> :wincmd p<CR>
 
 " Equal Size Windows
 nmap <silent> <leader>w= :wincmd =<CR>
