@@ -26,7 +26,7 @@ Bundle 'tpope/vim-repeat'
 Bundle 'guns/vim-sexp'
 Bundle 'tpope/vim-sexp-mappings-for-regular-people'
 Bundle 'flazz/vim-colorschemes'
-Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'amdt/vim-niji'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'sukima/xmledit'
 
@@ -177,8 +177,5 @@ let g:SuperTabDefaultCompletionType = "context"
 let g:airline_powerline_fonts = 1
 let g:airline_theme = "powerlineish"
 
-" Rainbow Parentheses
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
+" Niji
+let g:niji_use_legacy_colours = 1
