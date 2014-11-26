@@ -28,6 +28,7 @@ Bundle 'tpope/vim-sexp-mappings-for-regular-people'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'christoomey/vim-tmux-navigator'
+Bundle 'sukima/xmledit'
 
 set hidden
 set history=10000
