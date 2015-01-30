@@ -63,4 +63,4 @@ if [ -f ~/.aws/creds.sh ]; then
 fi
 
 # Lein
-alias lein="LEIN_JVM_OPTS='-Dlog4j.configuration=file:$(echo $HOME)/.lein/log4j.properties' lein"
+alias lein="LEIN_JVM_OPTS='-Dlog4j.configuration=file:$(echo $HOME)/.log4j.lein.properties' lein"
