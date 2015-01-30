@@ -61,3 +61,6 @@ export PYTHONDONTWRITEBYTECODE=1
 if [ -f ~/.aws/creds.sh ]; then
     source ~/.aws/creds.sh
 fi
+
+# Lein
+alias lein="LEIN_JVM_OPTS='-Dlog4j.configuration=file:$(echo $HOME)/.lein/log4j.properties' lein"
