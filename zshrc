@@ -21,7 +21,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git python vagrant virtualenvwrapper)
+plugins=(aws git python vagrant virtualenvwrapper)
 
 # VIM-style shell
 export EDITOR="vim"
@@ -57,10 +57,6 @@ export PATH=$GOPATH/bin:$PATH
 
 # Python
 export PYTHONDONTWRITEBYTECODE=1
-
-if [ -f ~/.aws/creds.sh ]; then
-    source ~/.aws/creds.sh
-fi
 
 # Lein
 alias lein="LEIN_JVM_OPTS='-Dlog4j.configuration=file:$(echo $HOME)/.log4j.lein.properties' lein"
