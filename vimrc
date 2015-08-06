@@ -26,7 +26,7 @@ Bundle 'tpope/vim-repeat'
 Bundle 'guns/vim-sexp'
 Bundle 'tpope/vim-sexp-mappings-for-regular-people'
 Bundle 'flazz/vim-colorschemes'
-Bundle 'amdt/vim-niji'
+Bundle 'luochen1990/rainbow'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'sukima/xmledit'
 
