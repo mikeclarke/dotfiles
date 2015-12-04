@@ -43,6 +43,9 @@ unsetopt correct_all
 alias rake='noglob rake'
 alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
 
+# Emacs
+alias emacs="/usr/local/Cellar/emacs/24.5/bin/emacs"
+
 # Ruby
 eval "$(rbenv init -)"
 
