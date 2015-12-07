@@ -11,3 +11,5 @@ projectile.cache
 auto-save-list
 backups
 elpa
+credentials.clj.gpg
+repl-history
