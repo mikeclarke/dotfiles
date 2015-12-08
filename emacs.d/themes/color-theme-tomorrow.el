@@ -37,7 +37,7 @@
             (aqua . "#3e999f")
             (blue . "#4271ae")
             (purple . "#8959a8")))
-    (night-eighties . ((background . "#2d2d2d")
+    (night-eighties . ((background . "color-16")
                        (current-line . "#393939")
                        (selection . "#515151")
                        (foreground . "#cccccc")
