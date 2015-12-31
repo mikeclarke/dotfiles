@@ -63,3 +63,6 @@ export PYTHONDONTWRITEBYTECODE=1
 
 # Lein
 alias lein="LEIN_JVM_OPTS='-Dlog4j.configuration=file:$(echo $HOME)/.log4j.lein.properties' lein"
+
+# Postgres.app
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
