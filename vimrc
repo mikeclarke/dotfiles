@@ -29,6 +29,8 @@ Bundle 'flazz/vim-colorschemes'
 Bundle 'luochen1990/rainbow'
 Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'sukima/xmledit'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 set hidden
 set history=10000
@@ -63,7 +65,7 @@ syntax on
 filetype plugin indent on
 
 set wildmode=longest,list
-set wildignore=log/**,node_modules/**,target/**,tmp/**,venv/**,*.rbc,build/**,dist/**
+set wildignore=log/**,node_modules/**,**/target/**,tmp/**,venv/**,*.rbc,build/**,dist/**
 set wildmenu
 
 let mapleader = ','
@@ -91,7 +93,7 @@ augroup vimrcEx
     \ endif
 
   "for ruby, autoindent with two spaces, always expand tabs
-  autocmd FileType ruby,eruby,yaml,html,javascript,json set ai sw=2 sts=2 et
+  autocmd FileType ruby,eruby,yaml,html,javascript,json,xml,xslt set ai sw=2 sts=2 et
   autocmd FileType python set sw=4 sts=4 et
 
   autocmd BufRead *.mkd  set ai formatoptions=tcroqn2 comments=n:&gt;
