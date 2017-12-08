@@ -211,3 +211,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
 
 # vim: ts=4 sts=4 shiftwidth=4 expandtab
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

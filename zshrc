@@ -34,7 +34,7 @@ bindkey '^N' history-search-forward
 # `cd` by just typing dir name
 setopt AUTO_CD
 
-export PATH=/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH
+export PATH=/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/python/libexec/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
 
@@ -47,7 +47,7 @@ alias lock="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resourc
 alias emacs="/usr/local/Cellar/emacs/24.5/bin/emacs"
 
 # Ruby
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 
 # Go
 if [ -d /usr/local/go ]; then
@@ -66,3 +66,5 @@ alias lein="LEIN_JVM_OPTS='-Dlog4j.configuration=file:$(echo $HOME)/.log4j.lein.
 
 # Postgres.app
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
