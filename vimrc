@@ -6,32 +6,32 @@ set nocompatible
 
 " Required Vundle setup
 filetype off
-set runtimepath+=~/.vim/bundle/vundle
-call vundle#rc()
+call plug#begin()
 
-Bundle 'gmarik/vundle'
-Bundle 'wincent/Command-T'
-Bundle 'ervandew/supertab'
-Bundle 'scrooloose/syntastic'
-Bundle 'vim-airline/vim-airline'
-Bundle 'vim-airline/vim-airline-themes'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'tpope/vim-commentary'
-Bundle 'vim-scripts/matchit.zip'
-Bundle 'tpope/vim-fugitive'
-Bundle 'elzr/vim-json'
-Bundle 'guns/vim-clojure-static'
-Bundle 'tpope/vim-fireplace'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-repeat'
-Bundle 'guns/vim-sexp'
-Bundle 'tpope/vim-sexp-mappings-for-regular-people'
-Bundle 'flazz/vim-colorschemes'
-Bundle 'luochen1990/rainbow'
-Bundle 'christoomey/vim-tmux-navigator'
-Bundle 'sukima/xmledit'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
+Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+Plug 'ervandew/supertab'
+Plug 'scrooloose/syntastic'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'altercation/vim-colors-solarized'
+Plug 'tpope/vim-commentary'
+Plug 'vim-scripts/matchit.zip'
+Plug 'tpope/vim-fugitive'
+Plug 'elzr/vim-json'
+Plug 'guns/vim-clojure-static'
+Plug 'tpope/vim-fireplace'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'guns/vim-sexp'
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
+Plug 'flazz/vim-colorschemes'
+Plug 'luochen1990/rainbow'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'sukima/xmledit'
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+
+call plug#end()
 
 set hidden
 set history=10000
@@ -135,16 +135,16 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 map <leader>l :Align
 nmap <leader>a :Ack
-nmap <leader>b :CommandTBuffer<CR>
 nmap <leader>d :NERDTreeToggle<CR>
 nmap <leader>f :NERDTreeFind<CR>
-nmap <leader>t :CommandT<CR>
-nmap <leader>T :CommandTFlush<CR>:CommandT<CR>
 nmap <leader>] :TagbarToggle<CR>
 nmap <leader><space> :call whitespace#strip_trailing()<CR>
 nmap <leader>g :ToggleGitGutter<CR>
 nmap <leader>c <Plug>Kwbd
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+
+" fzf
+nmap <Leader>t :Files<CR>
 
 " Equal Size Windows
 nmap <silent> <leader>w= :wincmd =<CR>
@@ -158,7 +158,6 @@ nmap <silent> <leader>vs :vsplit<CR>
 nmap <silent> <leader>sc :close<CR>
 
 " plugin settings
-let g:CommandTMaxHeight=20
 let g:gitgutter_enabled = 0
 let g:ackprg = 'ag --nogroup --column'
 

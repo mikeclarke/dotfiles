@@ -1,5 +1,6 @@
 vim/.netrwhist
 vim/bundle/**
+vim/plugged/**
 .smex-items
 *~$
 places

@@ -1,2 +1,2 @@
 unlet! b:did_ftplugin
-source ~/.vim/bundle/xmledit/ftplugin/xml.vim
+source ~/.vim/plugged/xmledit/ftplugin/xml.vim
