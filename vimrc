@@ -30,6 +30,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'sukima/xmledit'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 

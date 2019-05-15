@@ -46,3 +46,5 @@ Thumbs.db
 *.iml
 
 .nrepl-port
+webpack-stats.json
+.pytest_cache
