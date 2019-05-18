@@ -21,7 +21,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(aws git python vagrant virtualenvwrapper)
+plugins=(aws git python vagrant virtualenvwrapper zsh-nvm)
 
 # VIM-style shell
 export EDITOR="vim"
@@ -34,7 +34,7 @@ bindkey '^N' history-search-forward
 # `cd` by just typing dir name
 setopt AUTO_CD
 
-export PATH=/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/python/libexec/bin:$PATH
+export PATH=/usr/local/opt/postgresql@10/bin:/usr/local/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/opt/python/libexec/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
 
@@ -67,4 +67,4 @@ alias lein="LEIN_JVM_OPTS='-Dlog4j.configuration=file:$(echo $HOME)/.log4j.lein.
 # Postgres.app
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
