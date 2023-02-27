@@ -48,3 +48,7 @@ Thumbs.db
 .nrepl-port
 webpack-stats.json
 .pytest_cache
+
+.lsp/
+.clj-kondo/
+.vscode/

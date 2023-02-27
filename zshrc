@@ -67,4 +67,7 @@ alias lein="LEIN_JVM_OPTS='-Dlog4j.configuration=file:$(echo $HOME)/.log4j.lein.
 # Postgres.app
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
+# Volta
+export PATH=$PATH:~/.volta/bin
+
 # [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

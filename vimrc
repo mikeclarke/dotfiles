@@ -6,34 +6,37 @@ set nocompatible
 
 " Required Vundle setup
 filetype off
-call plug#begin()
 
-Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
-Plug 'ervandew/supertab'
-Plug 'scrooloose/syntastic'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'altercation/vim-colors-solarized'
-Plug 'tpope/vim-commentary'
-Plug 'vim-scripts/matchit.zip'
-Plug 'tpope/vim-fugitive'
-Plug 'elzr/vim-json'
-Plug 'guns/vim-clojure-static'
-Plug 'tpope/vim-fireplace'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
-Plug 'guns/vim-sexp'
-Plug 'tpope/vim-sexp-mappings-for-regular-people'
-Plug 'flazz/vim-colorschemes'
-Plug 'luochen1990/rainbow'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'sukima/xmledit'
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
-Plug 'leafgarland/typescript-vim'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-call plug#end()
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'junegunn/fzf.vim'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/syntastic'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'tpope/vim-commentary'
+Plugin 'vim-scripts/matchit.zip'
+Plugin 'elzr/vim-json'
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'guns/vim-sexp'
+Plugin 'tpope/vim-sexp-mappings-for-regular-people'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'luochen1990/rainbow'
+Plugin 'christoomey/vim-tmux-navigator'
+" Plugin 'sukima/xmledit'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'prettier/vim-prettier', { 'do': 'yarn install' }
+
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 set hidden
 set history=10000
@@ -149,6 +152,7 @@ nmap <leader>c <Plug>Kwbd
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
 " fzf
+set rtp+=/usr/local/opt/fzf
 nmap <Leader>t :Files<CR>
 
 " Equal Size Windows
@@ -181,8 +185,6 @@ nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
 
 let g:syntastic_python_checker_args='--max-line-length=100'
 let g:SuperTabDefaultCompletionType = "context"
-let g:airline_powerline_fonts = 1
-let g:airline_theme = "powerlineish"
 
 " Niji
 let g:niji_use_legacy_colours = 1
